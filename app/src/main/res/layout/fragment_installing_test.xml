@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="10px"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:background="#5DAECA"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <LinearLayout
+                    android:gravity="center|left"
+                    android:paddingTop="10px"
+                    android:paddingBottom="10px"
+                    android:background="#5DAECA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/connect_flag"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:editable="false"
+                        android:text="蓝牙未连接"
+                        android:textSize="17sp"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edittext_tablenum"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="012016000021"
+                        android:hint="请输入表号"
+                        android:ems="10"
+                        android:maxLength="12"
+                        android:textSize="17sp"
+                        android:textColor="@color/white"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="textPersonName" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="320dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:background="#6DCDED"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image_camera_show"
+                        android:layout_width="320dp"
+                        android:layout_height="240dp"
+                        android:scaleType="fitStart"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true" />
+
+                    <com.northmeter.camerameterwithblue.widget.DragScaleViewTimeing
+                        android:id="@+id/scale_view"
+                        android:layout_centerInParent="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:background="#5DAECA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="X:"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                    <EditText
+                        android:id="@+id/edittext_x"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:ems="10"
+                        android:text="0"
+                        android:textSize="15sp"
+                        android:maxLength="3"
+                        android:textColor="@color/white"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="X长度:"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edittext_x_long"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:ems="10"
+                        android:text="280"
+                        android:textSize="15sp"
+                        android:maxLength="3"
+                        android:textColor="@color/white"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="#5DAECA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Y:"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                    <EditText
+                        android:id="@+id/edittext_y"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:ems="10"
+                        android:text="40"
+                        android:textSize="15sp"
+                        android:maxLength="3"
+                        android:textColor="@color/white"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="Y长度:"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:id="@+id/edittext_y_long"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:ems="10"
+                        android:text="120"
+                        android:textSize="15sp"
+                        android:maxLength="3"
+                        android:textColor="@color/white"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button_para_select"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="1px"
+                        android:gravity="center"
+                        android:background="@drawable/selector_sure_button_bg"
+                        android:ems="10"
+                        android:text="拍照窗口参数查询"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/button_para_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/selector_sure_button_bg"
+                        android:ems="10"
+                        android:text="拍照窗口参数设置"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="textPersonName"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="1px"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/button_analysis_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="2px"
+                        android:gravity="center"
+                        android:background="@drawable/selector_sure_button_bg"
+                        android:ems="10"
+                        android:text="解析照片"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

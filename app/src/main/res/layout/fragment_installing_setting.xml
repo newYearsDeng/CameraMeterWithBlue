@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="1px"
+        android:background="#F5F5F5"
+        android:scrollbarThumbVertical="@color/color_little_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="配置方案" />
+
+                <TextView
+                    android:id="@+id/tv_choose_plan"
+                    style="@style/device_detail_text_right"
+                    android:hint="请选择配置方案"/>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="曝光时间" />
+
+                <EditText
+                    android:id="@+id/et_exposure_time"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="30" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="曝光设置" />
+
+                <TextView
+                    android:id="@+id/tv_exposure_setting"
+                    android:layout_width="100dp"
+                    style="@style/device_detail_text_right"
+                    android:text="自动曝光" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="取景坐标x轴原点" />
+
+                <EditText
+                    android:id="@+id/et_coordinate_x"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="取景坐标y轴原点" />
+
+                <EditText
+                    android:id="@+id/et_coordinate_y"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="0" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="取景坐标x轴长度" />
+
+                <EditText
+                    android:id="@+id/et_coordinate_xlong"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="320" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="取景坐标y轴长度" />
+
+                <EditText
+                    android:id="@+id/et_coordinate_ylong"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="240" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="对比度" />
+
+                <EditText
+                    android:id="@+id/et_contrast_ratio"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="60" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="压缩率" />
+
+                <EditText
+                    android:id="@+id/et_compression_ratio"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    style="@style/device_detail_text_right"
+                    android:text="60" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="补光灯状态" />
+
+                <TextView
+                    android:id="@+id/tv_flash_state"
+                    android:layout_width="140dp"
+                    style="@style/device_detail_text_right"
+                    android:text="开启自动补光" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="上报类型" />
+
+                <TextView
+                    android:id="@+id/tv_reporting_type"
+                    android:layout_width="140dp"
+                    style="@style/device_detail_text_right"
+                    android:text="参考起始时间上报" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="起始日期" />
+
+                <TextView
+                    android:id="@+id/tv_reporting_date"
+                    android:layout_width="100dp"
+                    style="@style/device_detail_text_right"
+                    android:text="2018-12-12" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="起始时间" />
+
+                <TextView
+                    android:id="@+id/tv_reporting_time"
+                    android:layout_width="100dp"
+                    style="@style/device_detail_text_right"
+                    android:text="12:00:00" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="间隔分钟" />
+
+                <EditText
+                    android:id="@+id/et_space_time"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    style="@style/device_detail_text_right"
+                    android:text="00" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="随机退避时间" />
+
+                <EditText
+                    android:id="@+id/et_random_time"
+                    android:layout_width="100dp"
+                    android:inputType="number"
+                    style="@style/device_detail_text_right"
+                    android:hint="请输入3-5分钟"
+                    android:text="5" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    style="@style/device_add_text_left"
+                    android:text="拍照时间" />
+
+                <TextView
+                    android:id="@+id/tv_photo_time"
+                    android:layout_width="100dp"
+                    style="@style/device_detail_text_right"
+                    android:text="00:00" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/device_add_layout"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/layout_postal_show">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/record_import_down_select"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_postal_control"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="通讯地址" />
+
+                    <EditText
+                        android:id="@+id/et_postal_address"
+                        android:layout_width="140dp"
+                        style="@style/device_detail_text_right"
+                        android:text="" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="新通讯地址" />
+
+                    <EditText
+                        android:id="@+id/et_postal_address_new"
+                        android:layout_width="140dp"
+                        style="@style/device_detail_text_right"
+                        android:hint="请输入修改后地址" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:padding="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_postal_address_select"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/selector_sure_button_add"
+                        android:text="查询通讯地址"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/btn_postal_address_change"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_sure_button_add"
+                        android:text="修改通讯地址"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_check"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_sure_button_broad_green"
+                    android:text="查  询"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_sure_button_broad_green"
+                    android:text="设   置"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="系统日期" />
+
+                    <TextView
+                        android:id="@+id/edit_system_timing_1"
+                        android:layout_width="100dp"
+                        style="@style/device_detail_text_right"
+                        android:text="2018-12-12" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="系统时间" />
+
+                    <TextView
+                        android:id="@+id/edit_system_timing_2"
+                        android:layout_width="100dp"
+                        style="@style/device_detail_text_right"
+                        android:text="12:00:00" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_systime_check"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/selector_sure_button_broad_green"
+                        android:text="查  询"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/btn_systime_set"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_sure_button_broad_green"
+                        android:text="设   置"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="IP地址" />
+
+                    <EditText
+                        android:id="@+id/edit_socket_ip"
+                        android:layout_width="150dp"
+                        style="@style/device_detail_text_right" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="远程端口号" />
+
+                    <EditText
+                        android:id="@+id/edit_socket_port"
+                        android:layout_width="150dp"
+                        style="@style/device_detail_text_right" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="运营商名称" />
+
+                    <EditText
+                        android:id="@+id/edit_socket_name"
+                        android:layout_width="150dp"
+                        style="@style/device_detail_text_right" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/button_socket_select"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/selector_sure_button_broad_green"
+                        android:text="查  询"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/button_socket_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_sure_button_broad_green"
+                        android:text="设   置"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="软件版本" />
+
+                    <TextView
+                        android:id="@+id/tv_soft_version"
+                        android:layout_width="150dp"
+                        style="@style/device_detail_text_right"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/device_add_layout"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        style="@style/device_add_text_left"
+                        android:text="硬件版本" />
+
+                    <TextView
+                        android:id="@+id/tv_har_version"
+                        android:layout_width="150dp"
+                        style="@style/device_detail_text_right" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_version_check"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_sure_button_broad_green"
+                        android:text="程序版本查询"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button_clean_para"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_sure_button_broad_green"
+                    android:text="参数初始化"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/button_clean_har"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_sure_button_broad_green"
+                    android:text="硬件初始化"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/button_clean_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/selector_sure_button_broad_green"
+                    android:text="清楚图片缓存"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/btn_hxpz"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_sure_button_broad_green"
+                    android:text="唤醒拍照"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
